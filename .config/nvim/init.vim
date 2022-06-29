@@ -95,3 +95,8 @@ let g:airline_symbols.linenr = ''
 
 " CoC
 let g:coc_global_extensions = ['coc-tsserver', 'coc-prettier', 'coc-eslint']
+
+" Fuzzy Finder
+nnoremap <silent> <C-k> :FZF<CR>
+" Gitignoring files
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
